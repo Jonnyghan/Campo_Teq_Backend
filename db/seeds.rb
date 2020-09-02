@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+mp = Team.new(name:"Mineola Portuguese",town:"Mineola,NY",coach: "Jonathan Ghandforoush")
+port = Team.new(name:"Portland Timbers", town: "Portland, Oregon", coach:"Giovanni Savarese")
+nufc = Team.new(name:"Newcastle United", town:"Newcastle Upon Tyne, UK", coach:"Steve Bruce")
+
