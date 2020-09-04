@@ -1,4 +1,4 @@
 class Club < ApplicationRecord
-    has_one :formation
+    belongs_to :formation
 
 end
