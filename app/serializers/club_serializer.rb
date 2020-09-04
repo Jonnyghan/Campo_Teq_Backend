@@ -1,5 +1,5 @@
 class ClubSerializer
   include FastJsonapi::ObjectSerializer
   attributes :name, :coach, :formation
-  belongs_to :formation
+ #Unneeded object bloat         ^ is more efficient    belongs_to :formation
 end
