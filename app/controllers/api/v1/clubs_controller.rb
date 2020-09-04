@@ -1,7 +1,11 @@
 class Api::V1::ClubsController < ApplicationController
     def index
         clubs = Club.all
-        render json: clubs
+        options={
+            include: [:formation]
+        }
+        #render json: clubs
+        render json: ClubSerializer.new(clubs, options)
     end
 
     def create
@@ -10,6 +14,7 @@ class Api::V1::ClubsController < ApplicationController
             render json: club, status: :accepted
         else
             render json: {errors: club.errors.full_messages}, status: :unproccessible_entity
+        end
     end
 
     private
