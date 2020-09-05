@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :clubs, only: [:index, :create]
+      resources :formations, only: :index
     end
   end
       

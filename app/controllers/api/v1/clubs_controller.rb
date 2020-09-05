@@ -1,15 +1,16 @@
 class Api::V1::ClubsController < ApplicationController
     def index
         clubs = Club.all
-        options={
-            include: [:formation]
-        }
+        #options={
+         #   include: [:formation]
+        #}
         #render json: clubs
-        render json: ClubSerializer.new(clubs, options)
+        render json: ClubSerializer.new(clubs)
     end
 
     def create
         club = Club.new(club_params)
+        
         if club.save
             render json: club, status: :accepted
         else

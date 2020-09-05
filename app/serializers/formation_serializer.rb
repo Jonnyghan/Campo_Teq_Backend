@@ -1,4 +1,4 @@
 class FormationSerializer
   include FastJsonapi::ObjectSerializer
-  attributes 
+  attributes :name, :description,:image_url, :clubs
 end
