@@ -1,24 +1,5 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+CampoTeq is a functional database that allows soccer coaches to view the formations of professional teams as well as other amateur teams in order to get a better idea of the kind of line up they should be using  in games.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This is the back-end, for the front end please look at : "https://github.com/Jonnyghan/Campo_Teq_Frontend"
