@@ -18,6 +18,11 @@ class Api::V1::ClubsController < ApplicationController
         end
     end
 
+    def destroy
+        club = Club.find_by(id: params[:id])
+        club.destroy
+    end
+
     private
     def club_params
         params.require(:club).permit(:name,:coach,:formation_id)
